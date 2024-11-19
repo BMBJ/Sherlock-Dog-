@@ -1,0 +1,13 @@
+@media(max-width:480px){
+    .bg-video video{
+        left: 75%;
+        
+    }
+    .description-text{
+        max-width: 300px;
+    text-align: center;
+    }
+    .title{
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,386 @@
+@import url(./reset.css);
+body{
+    color: #fff;
+}
+.container {
+    height: 100%;
+    position: relative;
+}
+.header {
+    position: relative; /* Фіксуємо контекст для дочірніх елементів */
+    height: 100vh; 
+    width: 100%;
+    overflow: hidden;
+    
+}
+.content-text{
+    position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Для вирівнювання */
+    z-index: 1; /* Навігація теж поверх відео */
+}
+.logo-text{
+    font-size: 22px;
+    color: #fff;
+}
+.logo-span{
+    color: gold;
+}
+.header-menu {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+}
+.header-list {
+    margin: 0 15px;
+}
+.menu-text {
+    text-decoration: none;
+    color: white; /* Білий текст для навігації */
+    font-size: 18px;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.header-information {
+}
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+.description-text {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-top: 5px;
+    margin-bottom: 120px;
+    
+}
+.description-text span{
+   text-decoration: underline; 
+}
+.bg-video {
+    position: absolute; /* Фонове відео займає всю область заголовка */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Відео залишається на задньому плані */
+    overflow: hidden;
+
+}
+.bg-video video{
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: contain; 
+        z-index: -1;
+}
+
+.main { 
+}
+.main-content {
+    color: #000;
+    padding-top: 100px;
+}
+.bg-decoration {
+    position: absolute; /* Фонове відео займає всю область заголовка */
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    z-index: 0;
+}
+.decore-img {
+
+}
+.main-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    z-index: 1;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+.main-title{
+font-size: 28px;
+font-weight: bold;
+}
+.main-information{
+font-size: 18px;
+opacity: 0.7;
+padding-top: 8px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки однакової ширини */
+     gap: 10;
+     column-gap: 30px;
+     justify-content: center;
+     z-index: 1;
+}
+.grid-item{
+   padding: 30px;
+   border-radius: 30px;  
+   z-index: 1;
+}
+.grid-img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 30px;   
+}
+.add-shadw{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1); 
+    transition: all 0.3s ease; 
+     
+}
+.inner-text{
+    color: #000;
+    max-width: 1200px;
+   margin-top: 50px;
+   z-index: 1;
+   letter-spacing: 2px;
+   font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+.text1{
+    font-size: 17px;
+    line-height: 1.2;
+}
+.text2{
+    font-size: 17px;
+    line-height: 1.2;
+}
+.text3{
+    font-size: 17px;
+    line-height: 1.2;
+}
+.text1 {
+    display: block;
+}
+
+
+.text2, .text3 {
+    display: none;
+}
+.grid-img1{
+    cursor: pointer; 
+    transform: scale(1.1);
+}
+.grid-img2{
+    cursor: pointer; 
+    transform: scale(1.1);
+}
+.grid-img3{
+    cursor: pointer; 
+    transform: scale(1.1);
+}
+.tocken-inforn{
+    margin-top: 50px;
+}
+
+.slider-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section2{
+    margin-top: 80px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  .slider-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    color: #000;   
+  }
+  .contacts-btns{
+    color: #000;
+  }
+.contacts-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    z-index: 1;
+
+}
+.contacts-btns a{
+    margin-left:35px ;
+}
+.telegram-btn {
+    padding: 13px 30px;
+    border: solid 2px #0088cc;
+    border-radius: 25px;
+    font-size: 17px;
+    color: #0088cc;
+    cursor: pointer;
+}
+.telegram-btn:hover{
+    color: #fff;
+    background-color: #0088cc;
+    font-weight: bolder;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1); 
+    transition: all 0.3s ease; 
+}
+.x-btn {
+    padding: 13px 30px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: #1DA1F2;
+    color: #fff;
+    cursor: pointer;
+}
+.x-btn:hover{
+    border:solid 2px #1DA1F2 ;
+    background-color: #fff;
+    color: #1DA1F2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1); 
+    transition: all 0.3s ease;
+}
+.movePump-btn {
+    padding: 13px 30px;
+    border: solid 2px #28A745;
+    border-radius: 25px;
+    font-size: 17px;
+    color: #28A770;
+    cursor: pointer;
+}
+.movePump-btn:hover{
+    color: #fff;
+    background-color: #28A745;
+    font-weight: bolder;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1); 
+    transition: all 0.3s ease;
+}
+.footer {
+    background-color:#fff; 
+    color: #000; 
+    padding: 20px 0;
+    margin-top: 100px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-logo h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.footer-logo_span{
+    color: gold;
+}
+.footer-text-1{
+    color: #50C878;
+}
+.footer-nav .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+.footer-nav .footer-menu li {
+    margin: 0;
+}
+.footer-nav .footer-menu li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+}
+.footer-nav .footer-menu li a:hover {
+    color: #ffcc00; 
+}
+.footer-contact p {
+    margin: 5px 0;
+}
+.footer-contact a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #ffcc00; 
+}
+
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
