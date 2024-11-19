@@ -207,8 +207,8 @@ padding-top: 8px;
 
 .slider-container {
     position: relative;
-    width: 600px;
-    height: 400px;
+    max-width: 600px;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     margin-top: 20px;
